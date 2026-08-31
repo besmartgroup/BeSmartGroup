@@ -6,6 +6,7 @@
 
   <title>BeSmartGroup | Connect. Follow. BeSmart.</title>
 
+  <!-- Social media icons -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -37,16 +38,18 @@
     .logo {
       width: 100%;
       max-width: 430px;
-      margin: 0 auto 22px;
+      height: auto;
       display: block;
+      margin: 0 auto 24px;
       border-radius: 12px;
     }
 
-    /* Tagline */
+    /* Connect Follow BeSmart */
     .tagline {
       color: #ffffff;
       font-size: 17px;
       margin-bottom: 30px;
+      letter-spacing: 0.2px;
     }
 
     .gold {
@@ -54,12 +57,14 @@
       font-weight: 700;
     }
 
-    /* Social buttons */
+    /* Social media buttons */
     .social-button {
       display: flex;
       align-items: center;
+
       width: 100%;
       min-height: 64px;
+
       margin: 14px 0;
       padding: 0 20px;
 
@@ -70,10 +75,11 @@
       border-radius: 14px;
 
       text-decoration: none;
+
       font-size: 17px;
       font-weight: 700;
 
-      box-shadow: 0 5px 18px rgba(0,0,0,0.35);
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
 
       transition: transform 0.2s ease,
                   box-shadow 0.2s ease;
@@ -81,10 +87,10 @@
 
     .social-button:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(212,175,55,0.25);
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.25);
     }
 
-    /* Social icons */
+    /* Social media icons */
     .social-icon {
       width: 48px;
       font-size: 28px;
@@ -118,6 +124,7 @@
       font-size: 14px;
     }
 
+    /* Footer */
     .footer {
       margin-top: 30px;
       color: #777777;
@@ -128,13 +135,20 @@
       color: #d4af37;
     }
 
+    /* Mobile */
     @media (max-width: 480px) {
+      body {
+        padding: 25px 16px;
+      }
+
       .logo {
         max-width: 100%;
+        margin-bottom: 22px;
       }
 
       .tagline {
         font-size: 15px;
+        margin-bottom: 28px;
       }
 
       .social-button {
@@ -148,17 +162,17 @@
 
   <main class="container">
 
-    <!-- BeSmartGroup Logo -->
+    <!-- Your BeSmartGroup Logo -->
     <img
-      src="besmartgroup-logo.jpeg"
+      src="besmartgroup-logo.jpeg.JPG"
       alt="BeSmartGroup"
       class="logo"
     >
 
+    <!-- Tagline -->
     <p class="tagline">
       Connect. Follow. <span class="gold">BeSmart.</span>
     </p>
-
 
     <!-- WhatsApp -->
     <a
@@ -180,7 +194,6 @@
       </div>
     </a>
 
-
     <!-- Instagram -->
     <a
       class="social-button"
@@ -200,7 +213,6 @@
         <i class="fa-solid fa-arrow-up-right-from-square"></i>
       </div>
     </a>
-
 
     <!-- Facebook -->
     <a
@@ -222,7 +234,6 @@
       </div>
     </a>
 
-
     <!-- LinkedIn -->
     <a
       class="social-button"
@@ -243,7 +254,7 @@
       </div>
     </a>
 
-
+    <!-- Footer -->
     <div class="footer">
       © 2026 <span>BeSmartGroup</span>
     </div>
