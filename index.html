@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>BeSmartGroup | Connect. Follow. BeSmart.</title>
+  <meta name="description" content="Connect. Follow. BeSmart. Visit the official BeSmartGroup website and connect with us on social media.">
+  <meta name="theme-color" content="#050505">
+
+  <link rel="canonical" href="https://besmartgroup.net/">
 
   <!-- Social media icons -->
   <link rel="stylesheet"
@@ -34,7 +39,7 @@
       text-align: center;
     }
 
-    /* BeSmartGroup Logo */
+    /* Original BeSmartGroup logo */
     .logo {
       width: 100%;
       max-width: 430px;
@@ -44,7 +49,7 @@
       border-radius: 12px;
     }
 
-    /* Connect Follow BeSmart */
+    /* Tagline */
     .tagline {
       color: #ffffff;
       font-size: 17px;
@@ -57,30 +62,22 @@
       font-weight: 700;
     }
 
-    /* Social media buttons */
+    /* Website and social media buttons */
     .social-button {
       display: flex;
       align-items: center;
-
       width: 100%;
       min-height: 64px;
-
       margin: 14px 0;
       padding: 0 20px;
-
       background: #ffffff;
       color: #111111;
-
       border: 2px solid #d4af37;
       border-radius: 14px;
-
       text-decoration: none;
-
       font-size: 17px;
       font-weight: 700;
-
       box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
-
       transition: transform 0.2s ease,
                   box-shadow 0.2s ease;
     }
@@ -90,12 +87,22 @@
       box-shadow: 0 10px 25px rgba(212, 175, 55, 0.25);
     }
 
-    /* Social media icons */
+    .social-button:focus-visible {
+      outline: 3px solid #ffffff;
+      outline-offset: 4px;
+    }
+
+    /* Icons */
     .social-icon {
       width: 48px;
+      flex-shrink: 0;
       font-size: 28px;
       text-align: center;
       margin-right: 12px;
+    }
+
+    .website {
+      color: #d4af37;
     }
 
     .whatsapp {
@@ -122,6 +129,7 @@
     .arrow {
       color: #777777;
       font-size: 14px;
+      margin-left: 8px;
     }
 
     /* Footer */
@@ -129,10 +137,20 @@
       margin-top: 30px;
       color: #777777;
       font-size: 12px;
+      line-height: 1.8;
     }
 
     .footer span {
       color: #d4af37;
+    }
+
+    .footer a {
+      color: #d4af37;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
     }
 
     /* Mobile */
@@ -155,6 +173,12 @@
         min-height: 62px;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      .social-button {
+        transition: none;
+      }
+    }
   </style>
 </head>
 
@@ -162,10 +186,10 @@
 
   <main class="container">
 
-    <!-- Your BeSmartGroup Logo -->
+    <!-- Original BeSmartGroup logo -->
     <img
       src="besmartgroup-logo.jpeg.JPG"
-      alt="BeSmartGroup"
+      alt="BeSmartGroup logo"
       class="logo"
     >
 
@@ -173,6 +197,27 @@
     <p class="tagline">
       Connect. Follow. <span class="gold">BeSmart.</span>
     </p>
+
+    <!-- Official website -->
+    <a
+      class="social-button"
+      href="https://besmartgroup.net/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit the official BeSmartGroup website"
+    >
+      <div class="social-icon website">
+        <i class="fa-solid fa-globe"></i>
+      </div>
+
+      <div class="social-name">
+        Visit Our Website
+      </div>
+
+      <div class="arrow">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </div>
+    </a>
 
     <!-- WhatsApp -->
     <a
@@ -257,6 +302,12 @@
     <!-- Footer -->
     <div class="footer">
       © 2026 <span>BeSmartGroup</span>
+      <br>
+      <a href="https://besmartgroup.net/"
+         target="_blank"
+         rel="noopener noreferrer">
+        besmartgroup.net
+      </a>
     </div>
 
   </main>
